@@ -1,0 +1,24 @@
+CodeAlpha Internship – Task 3
+Network Intrusion Detection System (NIDS) using Snort
+
+Steps Performed:
+
+1. Installed Snort on Kali Linux
+   sudo apt update
+   sudo apt install snort
+
+2. Verified Snort installation
+   snort -V
+
+3. Edited the local rule file
+   sudo nano /etc/snort/rules/local.rules
+
+4. Added custom ICMP detection rule
+
+5. Ran Snort in IDS mode
+   sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+
+6. Generated traffic using ping command
+   ping google.com
+
+7. Observed alert messages in terminal
